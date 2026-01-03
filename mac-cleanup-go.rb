@@ -5,21 +5,21 @@
 class MacCleanupGo < Formula
   desc "Interactive TUI for cleaning macOS caches, logs, and temporary files"
   homepage "https://github.com/2ykwang/mac-cleanup-go"
-  version "0.4.0"
+  version "1.5.1"
   license "MIT"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/2ykwang/mac-cleanup-go/releases/download/v0.4.0/mac-cleanup-go_0.4.0_darwin_amd64.tar.gz"
-    sha256 "1816681811a1fd9cba1a16e77bb3493ee16dd307ca9b5e00ef58064ce3466199"
+    url "https://github.com/2ykwang/mac-cleanup-go/releases/download/v1.5.1/mac-cleanup-go_1.5.1_darwin_amd64.tar.gz"
+    sha256 "56129295bf48ecdf6cc1198469586b462e4032ff45fc0117900d3389ba528601"
 
     def install
       bin.install "mac-cleanup"
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/2ykwang/mac-cleanup-go/releases/download/v0.4.0/mac-cleanup-go_0.4.0_darwin_arm64.tar.gz"
-    sha256 "c0647a8530f4fd93524602b509f4f80d8ceecde8c3b4063848975bfbb2b5beb7"
+    url "https://github.com/2ykwang/mac-cleanup-go/releases/download/v1.5.1/mac-cleanup-go_1.5.1_darwin_arm64.tar.gz"
+    sha256 "28d712469436e3bf7ad85bef863ccd9efdabd08bb06968ccb92e11c1e30cd001"
 
     def install
       bin.install "mac-cleanup"
